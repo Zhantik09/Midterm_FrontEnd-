@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Sound Story</title>
+    <script>
+    alert("What is your biggest fear?")
+    </script>
+</head>
+<body>
+	<section>
+		<h2 id="text">The Biggest Fear</h2>
+		<img src="morestars.png" id="morestars">
+		<img src="darkmoon.png" id="darkmoon">
+		<img src="foggg.png" id="foggg">
+	</section>
+	
+		<div class="player">
+			<audio controls>
+			<source src = "sound_project.wav" type = "audio/wav">
+			</audio>
+		</div>
+		
+
+<!-- 	<div class="container" id="container">
+			<button class="button" id="stopButton" >Restart</button>
+		</div>
+		<label class="switch">
+		<input type="checkbox">
+		<span class="slider round"></span>
+		</label> -->
+
+	   <img src="deetwo.jpeg">
+       <img src="interview.png">
+       <img src="bubble.png">
+       <img src="elevator.png">
+       <img src="scream.png">
+       <img src="nineoneone.png">
+       <img src="class.png">
+
+	<script>
+		let morestars=document.getElementById('morestars');
+		let darkmoon=document.getElementById('darkmoon');
+		let foggg=document.getElementById('foggg');
+		let text=document.getElementById('text');
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			morestars.style.left = value * 0.25 + 'px';
+			darkmoon.style.left = value * 1.05 + 'px';
+			text.style.marginRight = value * 4 + 'px';
+		})
+	</script>
+</body>
+</html>
