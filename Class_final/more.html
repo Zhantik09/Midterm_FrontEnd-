@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap">
+    <title>Tale</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cinzel Decorative', cursive;
+            background: linear-gradient(to bottom, #001f3f, #00051a);
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        header, nav {
+            font-family: 'Cinzel Decorative', cursive;
+            background-color: #001a33;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .narrative-section {
+            font-family: 'Quicksand', sans-serif;
+            height: 100vh;
+            background-color: rgba(0, 31, 63, 0.2);
+            transition: background-color 0.5s ease;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 200px;
+            box-sizing: border-box;
+        }
+
+        .narrative-section:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        .narrative-section.active {
+            background-color: rgba(0, 31, 63, 0.9);
+        }
+
+        .landing-page {
+            position: relative;
+            height: 100vh;
+        }
+
+        .parallax {
+            background: linear-gradient(to bottom, rgba(0, 31, 63, 0.8), rgba(0, 5, 26, 0.8));
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .mouse-reactive-object {
+            background-image: url('mountains.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .parallax-container {
+            position: relative;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .parallax-content {
+            text-align: center;
+        }
+
+        .parallax-text {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInAnimation 1s ease forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+                footer {
+    background-color: #010614;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Cinzel Decorative', cursive;
+    }
+
+    .footer-content {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Altyn</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#section1">Part 1</a>
+            <a href="#section2">Part 2</a>
+            <a href="#section3">Part 3</a>
+            <a href="game.html">Game</a>
+        </nav>
+    </header>
+
+    <div class="landing-page" id="landingPage">
+        <div class="parallax" id="parallax"></div>
+        <div class="mouse-reactive-object" id="mouseReactiveObject"></div>
+    </div>
+
+    <div class="narrative-section" id="section1">
+        <div class="parallax-container">
+            <div class="parallax-content">
+                <p class="parallax-text fade-in">Once upon a time, there lived a rich and a poor neighbor. Their enmity is such that they don't want to see each other. The rich man's house was spacious and beautiful. It is full of gold and silver. And the poor man's house was made of wood, and the roof was covered with bushes. He barely earned his bread, let alone gold and silver. He sowed crops, watered them, waited for them, reaped them and saw his day. One warm spring, there will be a disaster, a flood. The rich man climbs the tree with his gold. And if he is poor, he puts a piece of silver bread in his lap and climbs up the tree.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrative-section" id="section2">
+        <div class="parallax-container">
+            <div class="parallax-content">
+                <p class="parallax-text fade-in">The flood lasts for fifteen days. One day to a rich poor man who was hungry:</p>
+                <p class="parallax-text fade-in">
+                -Oh, poor man, take this piece of gold and give me a piece of bread, he says.</p>
+                <p class="parallax-text fade-in">- No, I can't give you gold, I can't give you bread, - answers the poor man. On the second day, the rich begs the poor again for bread. "I'll give you half of my gold," he says this time.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="narrative-section" id="section3">
+        <div class="parallax-container">
+            <div class="parallax-content">
+                <p class="parallax-text fade-in">"No, I can't give it," said the poor man. Finally, as he is dying of hunger, he can't bear it anymore, and the rich man says that he will exchange all his gold for a piece of bread.
+                The poor man does not give in anyway. The rich man lost his strength, his head spins and he falls into the water. And the next day the water stops and the poor tree falls from the top.</p>
+                  <p class="parallax-text fade-in">It is for this reason that people say: "Gold and silver are stones, barley and wheat are food."</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023. by Zhaniya Korpebayeva</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const parallax = document.getElementById('parallax');
+            const mouseReactiveObject = document.getElementById('mouseReactiveObject');
+            const sections = document.querySelectorAll('.narrative-section');
+
+            window.addEventListener('scroll', function () {
+                const offset = window.pageYOffset;
+                parallax.style.backgroundPositionY = offset * 0.7 + 'px';
+
+                sections.forEach(section => {
+                    const distance = section.getBoundingClientRect().top;
+                    const parallaxFactor = section.dataset.speed;
+                    section.style.transform = `translateY(${distance * parallaxFactor}px)`;
+
+                    if (distance < window.innerHeight * 0.5 && distance > -window.innerHeight * 0.5) {
+                        section.classList.add('active');
+                    } else {
+                        section.classList.remove('active');
+                    }
+                });
+            });
+
+            window.addEventListener('mousemove', function (e) {
+                const x = e.clientX / window.innerWidth - 0.5;
+                const y = e.clientY / window.innerHeight - 0.5;
+
+                mouseReactiveObject.style.transform = `translate(-50%, -50%) translate(${x * 200}px, ${y * 200}px)`;
+            });
+        });
+    </script>
+    
+</body>
+</html>
